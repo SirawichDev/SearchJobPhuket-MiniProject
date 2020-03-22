@@ -7,11 +7,12 @@ const App = () => {
 
   return (
     <div className="App">
-      Hello World
-      <Showjobs />
-      <ManageJob />
       <Navbar />
       <Login />
+      <Showjobs />
+      <ManageJob />
+      
+      
     </div>
   )
 }

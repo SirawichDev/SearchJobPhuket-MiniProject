@@ -38,9 +38,9 @@ const Managejob = props => {
     return (
         <div>
         selected job: {job.position} {job.responsability}
-        <h2>Add job</h2>
+        <h2>Add job Component When Authen == true</h2>
         Position:<input type="text" onChange={(e)=>setPosition(e.target.value)} /> <br/>
-        Responsability:<input type="number" onChange={(e)=>setRespon(e.target.value)} /> <br/>
+        Responsability:<input type="text" onChange={(e)=>setRespon(e.target.value)} /> <br/>
         Quantity<input type="number" onChange={(e) => setQuantity(e.target.value)} /> 
          {/* <button onClick={ () => addJob(name, weight)}>Add new job</button>  */}
         </div>

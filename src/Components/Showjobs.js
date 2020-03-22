@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import Comment from './Comment'
 import axios from 'axios'
 export default () => {
     const [position, setPosition] = useState('')
@@ -20,7 +21,7 @@ export default () => {
               (<li key={index}>
                   Position: {(job)?job.position:'-'}, Responsability : {(job)?job.respon:'-'}, Quantity : {(job)?job.quantity:0}, Salary : {(job)? job.salary:0}
                   if(sess){
-                      <p>Hello World</p>
+                      <Comment />
                     /* <button onClick={() => deleteBear(job.id)}> Delete </button>
                   <button onClick={() => getBear(job.id)}>Get</button>
                   <button onClick={() => updateBear(job.id)}>Update</button> */
@@ -39,7 +40,7 @@ export default () => {
 
   return (
       <div>
-          <h2>Jobs</h2>
+          <h2>Jobs Component</h2>
           <ul>{printJobs()}</ul>
       </div>
   )
